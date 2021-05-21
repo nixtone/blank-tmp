@@ -1,0 +1,55 @@
+html, body {
+	height: 100%;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+#wrapper {
+	flex: 1 0 auto;
+}
+footer {
+	flex: 0 0 auto;
+}
+.wide {
+	width: 100%;
+}
+.container {
+	box-sizing: border-box;
+	margin:0 auto;
+	max-width: 1200px; /* Задать ширину блоков */
+	min-width: 320px;
+}
+
+/* Атомарные классы */
+
+
+
+/* Основное */
+
+
+
+/* Адаптив */
+
+@media all and (min-width: 1211px) {
+	.nob {
+		display: none;
+	}
+}
+@media all and (max-width: 1210px) {
+	.container:not(.cpn) {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.nom {
+		display: none;
+	}
+}
+
+/* Палитра областей (удалить) */
+header     { background: #e3f1ff; }
+#wrapper   { background: #f2e0b5; }
+.wide     { background: #edffe5; }
+.container { background: #d0ecc4; }
+footer     { background: #e3f1ff; }
