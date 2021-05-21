@@ -1,0 +1,93 @@
+body, h1, h2, h3, h4, ul, ol, textarea, pre, p, blockquote {
+	margin: 0;
+}
+ul, ol, textarea, td, th, input { 
+	padding: 0;
+}
+body {
+	font-size: 100%;
+}
+pre {
+	white-space: pre-wrap;
+}
+input[type="submit"], input[type="reset"] {
+	cursor: pointer;
+}
+html, body {
+	height: 100%;
+}
+h1,h2, h3, h4 {
+	font-weight: normal;
+	font-size: 100%;
+}
+li {
+	list-style: none;
+	display: list-item;
+}
+table {
+	border-collapse: collapse;
+}
+.clear:before, .clear:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* ---------------------------------- */
+
+#wrapper {
+	min-height: 100%;
+	height: 100%;
+	height: auto !important;
+	overflow: hidden;
+}
+#wrapper-content {
+	overflow: hidden;
+	margin:0 auto;
+}
+.wide {
+	width: 100%;
+}
+.container {
+	box-sizing: border-box;
+	margin:0 auto;
+	max-width: 1200px; /* Ширина блоков */
+	min-width: 320px;
+}
+
+/* Атомарные классы */
+
+
+
+/* ---------------------------------- */
+
+
+
+/* ---------------------------------- */
+
+@media all and (min-width: 1211px) {
+	.nob {
+		display: none;
+	}
+}
+@media all and (max-width: 1210px) {
+	.container:not(.cpn) {
+		padding-left: 15px;
+		padding-right: 15px;
+		box-sizing: border-box;
+	}
+	.nom {
+		display: none;
+	}
+}
+@media all and (max-width: 920px) {
+
+}
+
+/* Цвета */
+header 		 { background: #e3f1ff; }
+#wrapper-content { background: #f2e0b5; }
+.wide			 { background: #edffe5; }
+.container		 { background: #d0ecc4; }
+#footer-push 	 { background: #f9f3da; }
+footer			 { background: #e3f1ff; }
