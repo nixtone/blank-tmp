@@ -36,6 +36,7 @@ footer {
 	.nob {
 		display: none;
 	}
+	
 }
 @media all and (max-width: 1210px) {
 	.container:not(.cpn) {
@@ -45,6 +46,7 @@ footer {
 	.nom {
 		display: none;
 	}
+
 }
 
 /* Палитра областей (удалить) */

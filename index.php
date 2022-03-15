@@ -17,7 +17,7 @@
 	</div>
 </div>
 <footer>Footer</footer>
-<script src="/static/jquery-3.5.1.min.js"></script>
+<script src="/static/jquery-3.6.0.min.js"></script>
 <script src="/static/custom.js"></script>
 </body>
 </html>
