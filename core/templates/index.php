@@ -12,11 +12,9 @@
 <body>
 <div id="wrapper">
 
-	<header>Header</header>
+<header>Header</header>
 
-	<div id="" class="block">
-		<div class="container">Content</div>
-	</div>
+<? $this->content() ?>
 
 </div>
 <footer>Footer</footer>
