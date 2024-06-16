@@ -1,34 +1,33 @@
+
 /* Структура */
 
 html, body {
-	height: 100%;
+    height: 100%;
 }
 body {
-	display: flex;
-	flex-direction: column;
-	margin: 0;
-}
-#wrapper {
-	flex: 1 0 auto;
-}
-footer {
-	flex: 0 0 auto;
-}
-.block {
-	width: 100%;
-}
-.container {
-	box-sizing: border-box;
-	margin:0 auto;
-	max-width: 1200px; /* Задать ширину блоков */
-	min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    #wrapper {
+        flex: 1 0 auto;
+    }
+    footer {
+        flex: 0 0 auto;
+    }
 }
 
 /* Атомарные классы */
 
+.container {
+	--max-width: 820px;
+	--padding-side: 15px;
+	width: min(var(--max-width), 100% - (var(--padding-side) * 2));
+	margin-inline: auto;
+	box-sizing: border-box;
+}
 .bimg, .bimg img {
-	display: block;
-	width: 100%;
+    display: block;
+    width: 100%;
 }
 
 
@@ -38,20 +37,16 @@ footer {
 
 /* Адаптив */
 
-@media all and (min-width: 1211px) {
-	.nob {
-		display: none;
-	}
-	
+@media all and (min-width: 821) {
+    .nob {
+        display: none;
+    }
+
 }
-@media all and (max-width: 1210px) {
-	.container:not(.cpn) {
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-	.nom {
-		display: none;
-	}
+@media all and (max-width: 820) {
+    .nom {
+        display: none;
+    }
 
 }
 
